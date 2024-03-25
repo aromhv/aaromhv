@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="#">Aarom HV</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li>
+              <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
+            </li>
+            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img src="img/hero.png" alt=""  />
+
+        </div>
+        <h1>Aarom Hualtibamba Vargas</h1>
+        <h2>
+          Analista de procesos | Power Platform Developer Jr | Br. Ingeniería de
+          Sistemas e Informática
+        </h2>
+        <div class="redes">
+          <a
+            href="https://www.facebook.com/profile.php?id=100005688374791&locale=es_LA"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          
+          <a
+            href="https://www.linkedin.com/in/edwin-aarom-hualtibamba-vargas-9b5b241b1/"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+        <h2>Sobre Mí</h2>
+        <p>
+          <span>Hola, soy Aarom.</span> Un profesional altamente motivado y con habilidades analíticas sólidas, dedicado a optimizar y mejorar los procesos 
+          empresariales para aumentar la eficiencia operativa y maximizar los resultados comerciales. Con una sólida 
+          formación en análisis de datos y experiencia práctica en identificar áreas de mejora, implementar soluciones 
+          efectivas y monitorear el rendimiento para garantizar resultados positivos a largo plazo. Poseo una combinación 
+          única de habilidades técnicas y interpersonales que me permiten colaborar efectivamente con equipos 
+          multidisciplinarios y liderar proyectos de mejora continua con éxito.
+          
+        </p>
+
+        <div class="fila">
+          <!-- datos personales -->
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li>
+                <strong>Cumpleaños</strong>
+                10-06-2001
+              </li>
+              <li>
+                <strong>Teléfono</strong>
+                940140391
+              </li>
+              <li>
+                <strong>Email</strong>
+                hualtibambavargasedwinaarom@gmail.com
+              </li>
+             
+              <li>
+                <strong>Dirección</strong>
+                123 Villa el Salvador, Lima Perú
+              </li>
+              <li>
+                <strong>Cargo</strong>
+                <span>Analista de sistemas y procesos</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- intereses -->
+          <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>JUEGOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-headphones"></i>
+                <span>MUSICA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-plane"></i>
+                <span>VIAJAR</span>
+              </div>
+              <div class="interes">
+                <i class="fa-brands fa-apple"></i>
+                <span>MAC OS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-person-hiking"></i>
+                <span>DEPORTE</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-book"></i>
+                <span>LIBROS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-car"></i>
+                <span>AUTOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-camera"></i>
+                <span>FOTOS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button onclick="window.open('https://drive.google.com/file/d/1gKZj6P5zQN3jd157rqsRWRpG4gspgBhV/view?usp=sharing', '_blank');">
+          Descargar CV <i class="fa-solid fa-download"></i>
+          <span class="overlay"></span>
+        </button>
+        
+      </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+      <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+          <!-- Technical Skill -->
+          <div class="col">
+            <h3>Technical Skills</h3>
+            <div class="skill">
+              <span>Power BI</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Power Automate</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>89%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Power Apps</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>95%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>DataVerse</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>81%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>React Ts</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>55%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Professional Skills -->
+          <div class="col">
+            <h3>Professional Skills</h3>
+            <div class="skill">
+              <span>Comunicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Trabajo en Equipo</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Creatividad</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>99%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Dedicación</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>65%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Proyect Management</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>94%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>Educación</h3>
+            <div class="item izq">
+              <h4>Ingenieria de sistemas e informatica</h4>
+              <span class="casa">Universidad Tecnologica del Perú</span>
+              <span class="fecha">2018 - 2023</span>
+              <p></p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Curso Gestión de Proyectos con Metodologías Ágiles y Enfoques Lean</h4>
+              <span class="casa">Fundación telefónica Movistar</span>
+              <span class="fecha">Mar-2024</span>
+              <p></p>
+              <div class="conectori">
+                <div class="circuloi">
+                </div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Curso Design Thinking</h4>
+              <span class="casa">Fundación telefónica Movistar</span>
+              <span class="fecha">Mar-2024</span>
+              <p></p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col derecha">
+            <h3>Experiencia de trabajo</h3>
+            <div class="item der">
+              <h4>Analista de sistemas | Power Platform Developer</h4>
+              <span class="casa">JLR Analytics</span>
+              <span class="fecha">2022 - 2023</span>
+              <p>Proyectos a cargo:</p>
+              <br />
+              <p>
+                -Líder de Proyecto Sodexo Chile: Análisis del sistema SGI -Migración de sistema
+                Google - Microsoft
+              </p>
+              <br />
+              <p>
+                -Documentos "AS IS" y "TO BE" para comprender a fondo los procesos existentes y proponer
+                soluciones de mejora, lo que resultó en una mayor claridad y eficiencia.
+              </p>
+              <br />
+           
+              <p>
+                -DLS Argentina: Análisis de proceso de Evaluaciones periódicas -
+                Sistema DSL ARCHER
+              </p>
+              <br />
+              <p>
+                -El Comercio: Análisis del proceso Gestión de Productos
+                Digitales y Cotizaciones - Sistema El comercio 2023 -Desarrollo
+                de aplicación (Power Apps, DataVerse, SharePoint)
+              </p>
+              <br />
+              <p>
+                -Besco: Análisis del proceso Entrega de departamentos ACTAS -
+                Sistema BESCO APP
+              </p>
+              <br />
+              <p>
+                -SIDER Perú: Analista de procesos- Propuesta "Pronóstico Compra
+                y Venta de Dólares
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item der">
+              <h4>Analista de sistemas | Power Platform Developer</h4>
+              <span class="casa">Metrica Andina</span>
+              <span class="fecha">2023 - 2024</span>
+              <p>Analista de Sistemas SGCI</p>
+            
+                <p>Análisis de proceso “Solicitud
+                Exigencias de calidad UPN”</p> 
+                <p>Desarrollo de documentos AS IS, TO BE</p>
+                <p>Desarrollo de BPM proceso actual Mejora de proceso</p>
+                <p>Desarrollo de
+                    Componentes - REACT TS</p>
+                    <p>SHAREPOINT Notificaciones automatizadas
+                        - Power Automate Cloud</p>
+                  
+              </p>
+              
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+      <div class="contenido-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">
+          <div class="proyecto">
+            <img src="img/DLS.png" alt="" />
+            <div class="overlay">
+              <h3>DLS ARCHER</h3>
+              <p>Argentina</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/sodexo.png" alt="" />
+            <div class="overlay">
+              <h3>SGPOS</h3>
+              <p>Sodexo Chile</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/besco.png" alt="" />
+            <div class="overlay">
+              <h3>BESCO APP</h3>
+              <p>BESCO</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/UPN.png" alt="" />
+            <div class="overlay">
+              <h3>Universidad Privada Norte</h3>
+              <p>SGCI UPN</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/upn2.png" alt="" />
+            <div class="overlay">
+              <h3>UPN</h3>
+              <p>UPN</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="img/comercio.png" alt="" />
+            <div class="overlay">
+              <h3>El Comercio APP</h3>
+              <p>El Comercio</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    function enviarFormulario(nombre, telefono, correo, tema, mensaje) {
+      var hojaDeCalculo = SpreadsheetApp.openByUrl('URL_DE_TU_HOJA_DE_CÁLCULO');
+      var hoja = hojaDeCalculo.getSheetByName('NOMBRE_DE_TU_HOJA');
+    
+      hoja.appendRow([nombre, telefono, correo, tema, mensaje]);
+    }
+    
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+      <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+          <!-- Formulario -->
+          <div class="col">
+            <input type="text" id="nombre" placeholder="Tú Nombre" />
+            <input type="text" id="telefono" placeholder="Número telefónico" />
+            <input type="text" id="correo" placeholder="Dirección de correo" />
+            <input type="text" id="tema" placeholder="Tema" />
+            <textarea id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            <button onclick="enviarMensaje()">
+              Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+              <span class="overlay"></span>
+            </button>
+            <script>
+              function enviarMensaje() {
+                var nombre = document.getElementById('nombre').value;
+                var telefono = document.getElementById('telefono').value;
+                var correo = document.getElementById('correo').value;
+                var tema = document.getElementById('tema').value;
+                var mensaje = document.getElementById('mensaje').value;
+            
+                google.script.run.enviarFormulario(nombre, telefono, correo, tema, mensaje);
+              }
+            </script>
+          </div>
+          <!-- Mapa -->
+          <div class="col">
+            <img src="img/ubicacion.png" alt="" />
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Villa el Salvador sede legado - Lima Perú
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  Whatsapp: 940104391
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  Email: hualtibambavargasedwinaarom@gmail.com
+
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+      <div class="redes">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i> </a>
+       
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
